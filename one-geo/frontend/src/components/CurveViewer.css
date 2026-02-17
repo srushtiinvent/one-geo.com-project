@@ -1,0 +1,146 @@
+.curve-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.viewer-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+.controls {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  height: fit-content;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.controls h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.control-group {
+  margin-bottom: 1.5rem;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.depth-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.depth-inputs input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.depth-inputs span {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.curve-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.curve-list .empty {
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+  font-size: 0.85rem;
+}
+
+.checkbox:hover {
+  background: #e8e8e8;
+}
+
+.checkbox input {
+  cursor: pointer;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.curve-name {
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.curve-unit {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.plot-container {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.loading,
+.empty-state {
+  text-align: center;
+  color: #999;
+  font-size: 1rem;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 1px solid #f5c6cb;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .viewer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .controls {
+    max-height: none;
+  }
+}

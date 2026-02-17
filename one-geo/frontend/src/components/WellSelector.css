@@ -1,0 +1,55 @@
+.well-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.well-item {
+  padding: 1rem;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.well-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+}
+
+.well-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.well-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.well-item p {
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.well-item.active p {
+  color: white;
+}
+
+.well-field {
+  font-weight: 500;
+}
+
+.well-depth {
+  font-size: 0.8rem;
+}
+
+.well-file {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  word-break: break-all;
+}

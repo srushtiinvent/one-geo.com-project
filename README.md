@@ -1,1 +1,1 @@
-# one-geo.com-project
+# one-geo-project
